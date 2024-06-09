@@ -1,5 +1,6 @@
 package pe.edu.idat.ec1_medinaluis
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
