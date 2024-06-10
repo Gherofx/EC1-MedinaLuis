@@ -1,10 +1,12 @@
 package pe.edu.idat.ec1_medinaluis
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
@@ -15,6 +17,8 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -32,6 +36,15 @@ fun Pregunta4(){
         }
 
         Column {
+            Image(
+                painterResource(id = R.drawable.top_background )
+                , contentDescription = null
+                , contentScale = ContentScale.FillBounds
+            )
+            Image(painter = painterResource(id = R.drawable.gatito),
+                contentDescription = null,
+                modifier = Modifier.height(200.dp))
+
             Text(text = "Impresion de Suma de Digitos del 23 al 99",
                 textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxWidth(),
